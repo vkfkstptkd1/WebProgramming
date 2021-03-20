@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	String id= request.getParameter("userid");//값을 받을때는 이 메소드로 받음.
+	out.print("전송되어 온 ID는 : ");
+	out.print(id);
+%>
+</body>
+</html>

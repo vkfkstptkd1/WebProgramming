@@ -1,0 +1,119 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%  request.setCharacterEncoding("euc-kr");  %><!--한글입력전송받을때이거반드시필요.-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.style1{border-color:blue;color:blue;}
+.style0{color:blue;background-color:lightgrey;}
+</style>
+</head>
+<body>
+	<table class="style1" border="1">
+	<tr><th class="style0" colspan=2><br><br>회원 정보 수정 양식</th></tr><!--표제목  -->
+	<tr><td class="style0" width= "100"> * 아이디</td>
+		<td width="500"> <%=request.getParameter("id") %></td>
+	</tr>
+	<tr><td class="style0"> * 비밀번호</td>
+		<td class="style1"> <%=request.getParameter("pwd") %>		
+		</td>
+	</tr>
+	<tr><td class="style0"> * 이 름</td>
+		<td class="style1">  <%=request.getParameter("name") %></td>
+	</tr>
+	<tr><td class="style0"> * 이메일</td>
+		<td class="style1">  <%=request.getParameter("email") %></td>
+	</tr>
+	<tr><td class="style0"> 전화번호</td>
+		<td class="style1">
+			 <%=request.getParameter("homenumber1") %>
+			-
+			 <%=request.getParameter("homenumber2") %>
+			-
+			 <%=request.getParameter("homenumber3") %>
+		</td>
+	</tr>
+	<tr><td class="style0"> * 핸드폰번호</td>
+		<td class="style1">
+		<SELECT >
+		<OPTION VALUE="010">010</OPTION>
+		<OPTION VALUE="011">011</OPTION>
+		<OPTION VALUE="012">012</OPTION>
+		</SELECT>
+		-
+		<input type="text" size=6>
+		-
+		<input type="text" size=6>
+		</td>
+	</tr>
+	<tr><td class="style0"> 주민번호</td>
+		<td class="style1"> 
+			 <%=request.getParameter("ssn1") %>
+			 -
+			 <%=request.getParameter("ssn2") %>
+		</td>
+	</tr>
+	<tr><td class="style0"> 우편번호</td>
+		<td class="style1">
+			 <%=request.getParameter("pn1") %>
+			 -
+			 <%=request.getParameter("pn2") %>
+		</td>
+	</tr>
+	<tr><td class="style0"> 주소</td>
+		<td class="style1">
+		  <%=request.getParameter("ad") %>
+		</td>
+	</tr>
+	<tr><td class="style0"> 나머지주소</td>
+		<td class="style1"> 
+		  <%=request.getParameter("remainderad") %>
+		</td>
+	</tr>
+	<tr><td class="style0"> 생년월일</td>
+		<td>  <%=request.getParameter("year") %>년&nbsp;
+			  <%=request.getParameter("month") %> size=2>월&nbsp;
+			  <%=request.getParameter("day") %>일&nbsp;
+			  <%=request.getParameter("age") %>살&nbsp;
+			 남<input type="radio" name="gender" value="남">
+			 여<input type="radio" name="gender" value="여">
+		</td>
+	</tr>
+	<tr><td class="style0"> 성별</td>
+		<td> <%=request.getParameter("gender") %></td>
+	</tr>
+	<tr><td class="style1"> 취미</td>
+		<td class="style1">
+			 독서<input type="checkbox" name="hobby" value="독서">
+			 게임	<input type="checkbox" name="hobby" value="게임">
+		   TV시청<input type="checkbox" name="hobby" value="TV시청">
+			 축구	<input type="checkbox" name="hobby" value="축구">
+			 기타	<input type="checkbox" name="hobby" value="기타">
+		</td>
+	</tr>
+	<tr><td class="style0"> 직업</td>
+		<td > 
+		<SELECT NAME="job">
+         <OPTION VALUE="">==직업을 선택하세요==</OPTION>
+         <OPTION VALUE="학생">학생</OPTION>
+         <OPTION VALUE="회사원">회사원</OPTION>
+         <OPTION VALUE="군인">군인</OPTION>
+         <OPTION VALUE="기타">기타</OPTION>
+	    </SELECT>
+	    </td>
+	</tr>
+	<tr><td class="style0"> 자기소개</td>
+		<td class="style1"> 
+		<textarea name="intro" rows=5 cols=80 >default</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td class="style0" colspan="2"><center><input type="submit" value="전송" ></center></td>
+	</tr>	
+	</table>
+
+</body>
+</html>

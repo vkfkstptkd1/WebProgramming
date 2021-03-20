@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>First Practice : In_ Form</title>
+<style type="text/css">
+.style1{border-color:blue;color:blue;}
+.style0{color:blue;background-color:lightgrey;}
+</style>
+</head>
+<body>
+<form action= "In_Form_ok.jsp" method="post">
+	<table class="style1" border="1">
+	<tr><th class="style0" colspan=2><br><br>회원 가입 입력 양식</th></tr><!--표제목  -->
+	<tr><td class="style0" width= "100"> * 아이디</td>
+		<td width="500"> <input type="text" name="id"></td>
+	</tr>
+	<tr><td class="style0"> * 비밀번호</td>
+		<td class="style1"> <input type="text" name="pwd"> &nbsp;&nbsp;&nbsp;&nbsp;비밀번호확인 <input type="text" name="pwdok">
+		</td>
+	</tr>
+	<tr><td class="style0"> * 이 름</td>
+		<td class="style1"> <input type="text" name="name"></td>
+	</tr>
+	<tr><td class="style0"> * 이메일</td>
+		<td class="style1"> <input type="text" name="email"></td>
+	</tr>
+	<tr><td class="style0"> 전화번호</td>
+		<td class="style1"><input type="text" name="homenumber" size=3>
+			-
+			<input type="text" name="homenumber" size=6>
+			-
+			<input type="text" name="homenumber" size=6>
+		</td>
+	</tr>
+	<tr><td class="style0"> * 핸드폰번호</td>
+		<td class="style1">
+		<SELECT NAME="phonenumber1">
+		<OPTION VALUE="010">010</OPTION>
+		<OPTION VALUE="011">011</OPTION>
+		<OPTION VALUE="012">012</OPTION>
+		</SELECT>
+		-
+		<input type="text" name="phonenumber2" size=6>
+		-
+		<input type="text" name="phonenumber3" size=6>
+		</td>
+	</tr>
+	<tr><td class="style0"> 주민번호</td>
+		<td class="style1"> 
+			 <input type="text" name="ssn1">
+			 -
+			 <input type="text" name="ssn2">
+		</td>
+	</tr>
+	<tr><td class="style0"> 우편번호</td>
+		<td class="style1">
+			 <input type="text" name="pn1" size=6>
+			 -
+			 <input type="text" name="pn2" size=6></td>
+	</tr>
+	<tr><td class="style0"> 주소</td>
+		<td class="style1"> <input type="text" name="ad" size=90 ></td>
+	</tr>
+	<tr><td class="style0"> 나머지주소</td>
+		<td class="style1"> <input type="text" name="remainderad"></td>
+	</tr>
+	<tr><td class="style0"> 생년월일</td>
+		<td> <input type="text" name="year" size=3>년&nbsp;
+			 <input type="text" name="month" size=2>월&nbsp;
+			 <input type="text" name="day" size=2>일&nbsp;&nbsp;&nbsp;
+			 나이<input type="text" name="age" size=2>&nbsp;&nbsp;
+			 남<input type="radio" name="gender" value="남">
+			 여<input type="radio" name="gender" value="여">
+		</td>
+	</tr>
+	<tr><td class="style1"> 취미</td>
+		<td class="style1">
+			 독서<input type="checkbox" name="hobby" value="독서">
+			 게임	<input type="checkbox" name="hobby" value="게임">
+		   TV시청<input type="checkbox" name="hobby" value="TV시청">
+			 축구	<input type="checkbox" name="hobby" value="축구">
+			 기타	<input type="checkbox" name="hobby" value="기타">
+		</td>
+	</tr>
+	<tr><td class="style0"> 직업</td>
+		<td > 
+		<SELECT NAME="job">
+         <OPTION VALUE="">==직업을 선택하세요==</OPTION>
+         <OPTION VALUE="학생">학생</OPTION>
+         <OPTION VALUE="회사원">회사원</OPTION>
+         <OPTION VALUE="군인">군인</OPTION>
+         <OPTION VALUE="기타">기타</OPTION>
+	    </SELECT>
+	    </td>
+	</tr>
+	<tr><td class="style0"> 자기소개</td>
+		<td class="style1"> 
+		<textarea name="intro" rows=5 cols=80 ></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td class="style0" colspan="2"><center><input type="submit" value="전송" ></center></td>
+	</tr>	
+	</table>
+</form>
+</body>
+</html>

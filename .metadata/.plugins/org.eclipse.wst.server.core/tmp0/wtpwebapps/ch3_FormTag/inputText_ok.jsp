@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%  request.setCharacterEncoding("euc-kr");  %><!--post방식일 때, 한글처리 방법  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<%//html태그안에 jsp파일(html+java) 만들때 만드시 이걸로 분류해줘야함.
+	String id= request.getParameter("userid");//값을 받을때는 이 메소드로 받음.
+//	out.print("전송되어 온 ID는 : ");
+//	out.print(id);
+//위는 객체이용 
+%>
+<%="넘겨져 온 아이디는:" %>
+<%=id %>
+</body>
+</html>

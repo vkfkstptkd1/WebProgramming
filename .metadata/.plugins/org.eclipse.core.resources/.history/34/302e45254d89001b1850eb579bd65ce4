@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>First Practice : In_ Form</title>
+</head>
+<body>
+<form action= "In_Form_ok.jsp" method="post">
+	<table border="1">
+	<tr><th colspan=2><br>회원 가입 입력 양식</th></tr><!--표제목  -->
+	<tr><td width= "100"> * 아이디</td>
+		<td width="500"> <input type="text" name="id"></td>
+	</tr>
+	<tr><td> * 비밀번호</td>
+		<td> <input type="text" name="pwd"> &nbsp;&nbsp;&nbsp;&nbsp;비밀번호확인 <input type="text" name="pwdok">
+		</td>
+	</tr>
+	<tr><td> * 이 름</td>
+		<td> <input type="text" name="name"></td>
+	</tr>
+	<tr><td> * 이메일</td>
+		<td> <input type="text" name="email"></td>
+	</tr>
+	<tr><td> 전화번호</td>
+		<td><input type="text" name="homenumber" size=3>
+			-
+			<input type="text" name="homenumber" size=6>
+			-
+			<input type="text" name="homenumber" size=6>
+		</td>
+	</tr>
+	<tr><td> * 핸드폰번호</td>
+		<td>
+		<SELECT NAME="phonenumber1">
+		<OPTION VALUE="010">010</OPTION>
+		<OPTION VALUE="011">011</OPTION>
+		<OPTION VALUE="012">012</OPTION>
+		</SELECT>
+		-
+		<input type="text" name="phonenumber2" size=6>
+		-
+		<input type="text" name="phonenumber3" size=6>
+		</td>
+	</tr>
+	<tr><td> 주민번호</td>
+		<td> <input type="text" name="ssn1">
+			 -
+			 <input type="text" name="ssn2">
+		</td>
+	</tr>
+	<tr><td> 우편번호</td>
+		<td> <input type="text" name="pn1" size =6>
+			 -
+			 <input type="text" name="pn2" size=6></td>
+	</tr>
+	<tr><td> 주소</td>
+		<td> <input type="text" name="ad" ></td>
+	</tr>
+	<tr><td> 나머지주소</td>
+		<td> <input type="text" name="remainderad"></td>
+	</tr>
+	<tr><td> 생년월일</td>
+		<td> <input type="text" name="year" size=3>년 
+			 <input type="text" name="month" size=2>월 
+			 <input type="text" name="day" size=2>일
+			 나이<input type="text" name="age" size=2>
+			 남<input type="radio" name="gender" value="남">
+			 여<input type="radio" name="gender" value="여">
+		</td>
+	</tr>
+	<tr><td> 취미</td>
+		<td> <input type="text" name="id"></td>
+	</tr>
+	<tr><td > 직업</td>
+		<td > <input type="text" name="id"></td>
+	</tr>
+	<tr><td > 자기소개</td>
+		<td > <textarea name="intro" rows=5 cols=80></textarea></td>
+	</tr>
+	<tr>
+		<td colspan="2"><center><input type="submit" value="전송" ></center></td>
+	</tr>	
+	</table>
+</form>
+</body>
+</html>
